@@ -1,0 +1,112 @@
+html {
+    font-size: 62.5%;
+    /*RESET PARA REMS- 62.5% = 10px de 16px(por default) */
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+
+/*Utilidades*/
+
+h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+
+/*Header*/
+
+header {
+    background-color: #ffa200;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: #008099;
+}
+
+@media (min-width: 768px) {
+    div.logo {
+        background-color: #ffa200;
+        padding: 0;
+    }
+}
+
+div.logo a {
+    font-size: 4rem;
+    color: #0fc200;
+}
+
+div.contenido-barra .item-barra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.contenido-barra a {
+    font-size: 2rem;
+}
+
+div.item-barra {
+    border: 1px solid black
+}
+
+@media (min-width: 768px) {
+    div.barra {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+    }
+}
+
+div.item-barra a i {
+    font-size: 3rem;
+    color: #008099;
+}
+
+div.item-barra p {
+    color: black;
+    margin: 0 0 0 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+    div.item-barra p {
+        margin: 0 2rem 0 1rem;
+    }
+    div.item-barra:last-of-type {
+        margin: 0 0 0 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    div.contenido-barra {
+        display: flex;
+    }
+    div.item-barra {
+        border: none;
+    }
+}
+
+@media (min-width: 768px) {
+    div.header {
+        display: flex;
+        padding: 1rem 10rem;
+    }
+}
