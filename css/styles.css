@@ -25,6 +25,33 @@ p {
     font-size: 2rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.button {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 900;
+    background-color: #0fc200;
+    color: #ffffff;
+    border: 1px solid #0fc200;
+    border-radius: 1rem;
+    padding: .5rem;
+}
+
+audio {
+    width: 100%;
+    background-color: red;
+}
+
 
 /*Header*/
 
@@ -63,7 +90,8 @@ div.contenido-barra a {
 }
 
 div.item-barra {
-    border: 1px solid black
+    border: 1px solid black;
+    padding: 1rem 0;
 }
 
 @media (min-width: 768px) {
@@ -80,10 +108,16 @@ div.item-barra a i {
 }
 
 div.item-barra p {
+    font-family: 'Bangers', cursive;
     color: black;
     margin: 0 0 0 2rem;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+div.item-barra:hover {
+    background-color: #e39104;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -109,4 +143,69 @@ div.item-barra p {
         display: flex;
         padding: 1rem 10rem;
     }
+}
+
+
+/*Contenido principal*/
+
+div .first-post {
+    padding: 0 1rem;
+}
+
+div.name-user {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+div.container-content {
+    margin: 1rem;
+}
+
+div.name-user {
+    background-color: #cceeff;
+    text-align: center;
+    padding: 1rem 0;
+    margin: 1rem 0 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.name-user p {
+    text-transform: lowercase;
+    font-weight: 900;
+    margin: 0;
+}
+
+div.reactions-content {
+    width: 100%;
+    display: flex;
+    align-content: center;
+    background-color: #cceeff;
+    padding: 1rem 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+div.upload {
+    display: flex;
+    align-items: center;
+}
+
+div.follow {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+div.follow :hover {
+    background-color: #0da001;
+    cursor: pointer;
+}
+
+div.upload a i {
+    color: #ff0000;
+    font-size: 3rem;
+    margin-right: 1rem;
 }
