@@ -4,11 +4,431 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Natsach | Songs</title>
+    <title>NATSACH</title>
+    <link rel="icon" href="img/pageLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@400;700;900&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <header>
+        <div class="header">
+            <div class="logo">
+                <div>
+                    <h1 class="contenido-logo">NATSACH</h1>
+                </div>
+                <a href="songs.html"><i class="fas fa-music"></i></a>
+            </div>
+            <div class="barra">
+                <div class="contenido-barra">
+                    <div class="item-barra">
+                        <a href="songs.html"><i class="fas fa-play icon"></i></a>
+                        <p>Música</p>
+                    </div>
+                    <div class="item-barra">
+                        <a href="posts.html"><i class="fas fa-book-open icon"></i></a>
+                        <p>Publicaciones</p>
+                    </div>
+                    <div class="dropleft item-barra">
+                        <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Cuenta
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Perfil <i class="fas fa-male"></i></a>
+                            <a class="dropdown-item" href="#">Mi Musica <i class="fas fa-drum"></i></a>
+                            <a class="dropdown-item" href="#">Configuracion <i class="fas fa-cogs"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
+    <section class="centrar">
+
+        <div class="main-container">
+            <!--
+            <div class="container-content">
+                <div class="contenido">
+
+                    <div class="name-user">
+                        <p><i class="far fa-user-circle"></i></p>
+                    </div>
+
+                    <div class="main-content first-post">
+                        <p>¿Qué estás pensando?</p>
+                    </div>
+                    <div class="reactions-content">
+                        <div class="upload">
+                            <a href="#"><i class="fas fa-play icon"></i></a>
+                            <a href="#"><i class="fas fa-book-open icon"></i></a>
+                            <a href="#"><i class="fas fa-quote-left icon"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a class="button">Postear</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content">
+                <div class="contenido">
+
+                    <div class="name-user">
+                        <p><i class="far fa-user-circle"></i>Marcos</p>
+                    </div>
+
+                    <div class="main-content">
+                        <img src="img/img1.jpg" alt="">
+                    </div>
+                    <div class="reactions-content">
+                        <div class="upload">
+                            <a href="#"><i class="fas fa-play icon"></i></a>
+                            <a href="#"><i class="fas fa-book-open icon"></i></a>
+                            <a href="#"><i class="fas fa-quote-left icon"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a class="button">Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container-content">
+                <div class="contenido">
+
+                    <div class="name-user">
+                        <p><i class="far fa-user-circle"></i>Marcos</p>
+                    </div>
+
+                    <div class="main-content">
+                        <img src="img/imagen3.jpg" alt="">
+                        <audio controls autoplay loop>
+                            <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                    <div class="reactions-content">
+                        <div class="upload">
+                            <a href="#"><i class="fas fa-play icon"></i></a>
+                            <a href="#"><i class="fas fa-book-open icon"></i></a>
+                            <a href="#"><i class="fas fa-quote-left icon"></i></a>
+                        </div>
+                        <div class="follow">
+                            <a class="button">Follow</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    -->
+            <div class="container-content">
+                <div class="kind-music">
+                    <ul class="list-group ul-kind-music">
+                        <li class="list-group-item disabled">Tipos de Música</li>
+                        <li class="list-group-item"><a href="#pop">Pop</a></li>
+                        <li class="list-group-item"><a href="#congregacional">Congregacional</a></li>
+                        <li class="list-group-item"><a href="#worship">Worship</a></li>
+                        <li class="list-group-item"><a href="#instrumentales">Instrumentales</a></li>
+                    </ul>
+                </div>
+                <div class="music">
+                    <div class="jumbotron jumbotron-fluid bg-primary text-center">
+                        <div class="container">
+                            <h1 class="display-4">NATSACH Music</h1>
+                            <p class="lead text-reset">La nueva red social de música cristiana. En la que podras compartir conocer y seguir a tus grupos favoritos musicales.</p>
+                            <button type="button" class="btn bg-dark text-light btn-lg btn-block">Empezar a Conocer</button>
+                        </div>
+                    </div>
+
+                    <div class="song">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-primary text-center" id="pop">
+                                <li class="breadcrumb-item active" aria-current="page">Pop</li>
+                            </ol>
+                        </nav>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-primary" id="congregacional">
+                                <li class="breadcrumb-item active" aria-current="page">Congregacional</li>
+                            </ol>
+                        </nav>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-primary" id="worship">
+                                <li class="breadcrumb-item active" aria-current="page">Worship</li>
+                            </ol>
+                        </nav>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb bg-primary" id="instrumentales">
+                                <li class="breadcrumb-item active" aria-current="page">Instrumentales</li>
+                            </ol>
+                        </nav>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="img/img1.jpg" alt="img music">
+                            <audio controls>
+                                <source src="audio/Ebenezer Guatemala 06. Lanza Gritos (Conmigo Estas(MP3_128K).mp3">
+                            </audio>
+                            <div class="card-body">
+                                <h3 class="card-title">Lanza Gritos de Alegria</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <aside>
+            <div class="aside">
+                <div class="notification-icon">
+                    <div>
+                        <a href="#"><i class="fas fa-bell icon"></i></a>
+                    </div>
+                    <div>
+                        <a href="#"><i class="fas fa-comments icon"></i></a>
+                    </div>
+                </div>
+                <div class="following">
+                    <p>Grupos Musicales</p>
+                </div>
+                <div class="followed">
+                    <div class="music-group">
+                        <img src="img/planetshakers.png" alt="img planetshakers">
+                    </div>
+                    <div class="music-group">
+                        <img src="img/bethel.png" alt="img bethel music">
+                    </div>
+                    <div class="music-group">
+                        <img src="img/Hillsong_Church_logo.png" alt="img Hillsong_Church_logo">
+                    </div>
+                    <div class="music-group">
+
+                    </div>
+                    <div class="music-group">
+
+                    </div>
+                    <div class="music-group">
+
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </section>
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
