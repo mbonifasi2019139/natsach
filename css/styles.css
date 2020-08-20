@@ -75,7 +75,7 @@ button {
 
 audio {
     width: 100%;
-    background-color: orange;
+    background-color: #ffffff;
 }
 
 .centrar {
@@ -87,6 +87,12 @@ audio {
 
 header {
     background-color: #ffa200;
+}
+
+@media (min-width: 768px) {
+    header {
+        height: 8rem;
+    }
 }
 
 div.logo {
@@ -204,7 +210,7 @@ div.kind-music ul li:hover {
     border: 1px solid #007bff;
 }
 
-ul.ul-kind-music li a {
+ul.ul-kind-music a {
     text-decoration: none;
     color: #000000;
     font-weight: 400;
@@ -345,7 +351,7 @@ div.main-content p {
     section div.main-container {
         overflow: auto;
         flex-basis: 80%;
-        height: 100vh;
+        height: calc(100vh - 8rem);
         background-color: #e1e1e1;
     }
     aside {
@@ -356,16 +362,12 @@ div.main-content p {
 div.aside {
     height: 100%;
     text-align: center;
-    background-color: #008099;
 }
 
 @media (min-width: 768px) {
     div.aside {
         height: 100%;
         text-align: center;
-        -webkit-box-shadow: inset 9px -1px 5px -5px rgba(0, 0, 0, 0.58);
-        -moz-box-shadow: inset 9px -1px 5px -5px rgba(0, 0, 0, 0.58);
-        box-shadow: inset 9px -1px 5px -5px rgba(0, 0, 0, 0.58);
     }
 }
 
@@ -381,7 +383,7 @@ div.notification-icon {
 }
 
 div.notification-icon a i {
-    color: #000000;
+    color: #ffffff;
 }
 
 div.notification-icon div {
@@ -395,6 +397,7 @@ div.notification-icon div {
 div.following p {
     font-family: 'Bangers', cursive;
     margin: 1rem 0;
+    color: #ffffff;
 }
 
 div.followed {
