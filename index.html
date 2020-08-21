@@ -5,9 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Natsach | LOG IN</title>
+    <link rel="icon" href="img/pageLogo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Lato:wght@400;700;900&family=Monoton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+
+    <main>
+        <div class="container-fluid container-login">
+            <div class="login">
+                <form class="container">
+                    <div class="container">
+                        <img src="img/login.png" alt="img login">
+                    </div>
+                    <div class="container entry-elements">
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Ingresa tu Nombre" required>
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" placeholder="Ingresa tu Contraseña" required>
+
+                        <button id="btn-login" class="btn btn-primary" style="height: 3.2rem;font-size: 1.5rem;">Login</button>
+                        <label for="recordarme">
+                            <input type="checkbox" checked="checked" name="recordarme">Recuerdame
+                        </label>
+                    </div>
+                    <div class="container">
+                        <p>Olvide mi <span>contraseña</span></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
 
 
     <footer>
@@ -22,6 +54,9 @@
         <img src="img/developer.jpg" alt="img developer" class="img-developer">
 
     </footer>
+
+
+    <script src="scripts/index.js"></script>
 </body>
 
 </html>
